@@ -1,13 +1,22 @@
-import tkinter as tk
-import Calculator
+class Calculator:
 
-#화면과 화면의 이름,크기 생성
-clac=tk.TK()
-calc.title('Calculator')
-calc.geometry('300*300')
+    def _init_(self,data):
+        self.data=data
 
-display=tk.Entry(calc,width=20) #display라는 이름의 출력창 추가. 폭20.
-display.pack()
+     def sum(self):
+         self.sum=0
+          for i in self.data:
+              self.sum+=i
+          print(self.sum)
 
+     def avg(self):
+         self.avg=self.sum/len(self.data)
+         print(self.avg)
 
-calc.mainloop()
+cal1=Calculator([1,2,3,4,5])
+cal1.sum()
+cal1.avg()
+cal2=Calculator([6,7,8,9,10])
+cal2.sum()
+cal2.avg()
+
