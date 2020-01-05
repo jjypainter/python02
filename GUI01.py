@@ -1,13 +1,13 @@
 from PyQt5 import QtWidgets
 
 
-class App(QWidgets):
+class App(QtWidgets.QWidget):
 
     def __init__(self):
         super().__init__()
         self.title='Main Window'
-        self.left=300
-        self.top=300
+        self.left=600
+        self.top=450
         self.width=640
         self.height=480
         self.initUI()
