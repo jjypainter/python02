@@ -1,7 +1,7 @@
 from PyQt5 import QtWidgets
 
 
-class App(QWidgets):
+class App(QtWidgets.QWidget):
 
     def __init__(self):
         super().__init__()
